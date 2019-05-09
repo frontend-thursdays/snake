@@ -141,7 +141,6 @@ class Snake {
     }
 
     getTime() {
-        console.log(this.points);
         const time = START_INTERVAL_TIME - this.points * POINT_MULTIPLIER;
 
         if (time > START_INTERVAL_TIME) {
@@ -152,7 +151,6 @@ class Snake {
             return MAX_INTERVALTIME;
         }
 
-        console.log(time);
         return time;
     }
 
@@ -186,7 +184,7 @@ class Snake {
 
     gameOver() {
         this.stop();
-        console.log('GAME OVER');
+        console.warn('GAME OVER');
         this.reset();
     }
 
