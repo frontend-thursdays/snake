@@ -7,7 +7,7 @@ const
         LEFT:  'ArrowLeft'
     },
     START_INTERVAL_TIME = 300,
-    MAX_INTERVALTIME    = 50,
+    MIN_INTERVAL_TIME   = 50,
     POINT_MULTIPLIER    = 5,
 
     RANDOM_X = () => Math.floor(Math.random() * Math.floor(window.innerWidth  / PART_SIZE)) * PART_SIZE,

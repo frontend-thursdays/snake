@@ -147,8 +147,8 @@ class Snake {
             return START_INTERVAL_TIME;
         }
 
-        if (time < MAX_INTERVALTIME) {
-            return MAX_INTERVALTIME;
+        if (time < MIN_INTERVAL_TIME) {
+            return MIN_INTERVAL_TIME;
         }
 
         return time;
